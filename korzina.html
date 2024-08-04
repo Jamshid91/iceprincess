@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>корзина</title>
+    <link rel="stylesheet" href="assets/css/plugins/bootsrap.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-between position-relative">
+                    <a href="./index.html" class="logo">
+                        <img src="assets/img/svg/logo.svg" alt="">
+                    </a>
+                    <ul class="nav d-none d-lg-flex justify-content-between align-items-center">
+                        <li><a href="#">ДОСТАВКА / ОПЛАТА / ГАРАНТИЯ</a></li>
+                        <li><a href="#">О КОМПАНИИ</a></li>
+                        <li><a href="#">О ВЛАДЕЛЬЦЕ</a></li>
+                        <li><a href="#">ПОЛЕЗНОЕ</a></li>
+                        <li><a href="#">ОПТ / СОВМЕСТНЫЕ ЗАКУПКИ</a></li>
+                    </ul>
+                    <a href="#" class="signIn-regis d-none d-lg-block">РЕГИСТРАЦИЯ / ВОЙТИ</a>
+
+                    <div class="header-btns d-flex align-items-center">
+                        <a href="#" class="shopping-cart">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.5 4.5H5.05848C5.7542 4.5 6.10206 4.5 6.36395 4.68876C6.62584 4.87752 6.73584 5.20753 6.95585 5.86754L7.5 7.5" stroke="#fff" stroke-linecap="round"/>
+                                <path d="M17.5 17.5H8.05091C7.90471 17.5 7.83162 17.5 7.77616 17.4938C7.18857 17.428 6.78605 16.8695 6.90945 16.2913C6.92109 16.2367 6.94421 16.1674 6.99044 16.0287V16.0287C7.04177 15.8747 7.06743 15.7977 7.09579 15.7298C7.38607 15.0342 8.04277 14.5608 8.79448 14.5054C8.8679 14.5 8.94906 14.5 9.11137 14.5H14.5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.1787 14.5H11.1376C9.85836 14.5 9.21875 14.5 8.71781 14.1697C8.21687 13.8394 7.96492 13.2515 7.461 12.0757L7.29218 11.6818C6.48269 9.79294 6.07794 8.84853 6.52255 8.17426C6.96715 7.5 7.99464 7.5 10.0496 7.5H15.3305C17.6295 7.5 18.779 7.5 19.2126 8.24711C19.6462 8.99422 19.0758 9.99229 17.9352 11.9884L17.6517 12.4846C17.0897 13.4679 16.8088 13.9596 16.3432 14.2298C15.8776 14.5 15.3113 14.5 14.1787 14.5Z" stroke="#fff" stroke-linecap="round"/>
+                                <circle cx="17" cy="20" r="1" fill="#fff"/>
+                                <circle cx="9" cy="20" r="1" fill="#fff"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="login">
+                            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" id="user">
+                                <path fill="#fff" d="M16 14a6 6 0 1 0-6-6A6 6 0 0 0 16 14zM16 4a4 4 0 1 1-4 4A4 4 0 0 1 16 4zM16 16A10 10 0 0 0 6 26v3a1 1 0 0 0 2 0V26a8 8 0 0 1 16 0v3a1 1 0 0 0 2 0V26A10 10 0 0 0 16 16z"></path>
+                            </svg>
+                        </a>
+                        <div class="menu-btn d-lg-none">
+                            <img src="assets/img/svg/menu.svg" alt="">
+                            <img src="assets/img/svg/close.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none d-lg-block">
+                <div class="col-12 d-flex align-items-center justify-content-end">
+                    <div class="search">
+                        <input type="text" class="search-inp" placeholder="Поиск">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 10.5C15 12.9853 12.9853 15 10.5 15C8.01472 15 6 12.9853 6 10.5C6 8.01472 8.01472 6 10.5 6C12.9853 6 15 8.01472 15 10.5ZM14.1793 15.2399C13.1632 16.0297 11.8865 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5C16.5 11.8865 16.0297 13.1632 15.2399 14.1792L20.0304 18.9697L18.9697 20.0303L14.1793 15.2399Z" fill="#fff"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="">
+                <div class="search">
+                    <input type="text" class="search-inp" placeholder="Поиск">
+                    <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 10.5C15 12.9853 12.9853 15 10.5 15C8.01472 15 6 12.9853 6 10.5C6 8.01472 8.01472 6 10.5 6C12.9853 6 15 8.01472 15 10.5ZM14.1793 15.2399C13.1632 16.0297 11.8865 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5C16.5 11.8865 16.0297 13.1632 15.2399 14.1792L20.0304 18.9697L18.9697 20.0303L14.1793 15.2399Z" fill="#fff"/>
+                    </svg>
+                </div>
+                <ul class="nav d-flex flex-column text-center flex-nowrap">
+                    <li><a href="#">ДОСТАВКА / ОПЛАТА / ГАРАНТИЯ</a></li>
+                    <li><a href="#">О КОМПАНИИ</a></li>
+                    <li><a href="#">О ВЛАДЕЛЬЦЕ</a></li>
+                    <li><a href="#">ПОЛЕЗНОЕ</a></li>
+                    <li><a href="#">ОПТ / СОВМЕСТНЫЕ ЗАКУПКИ</a></li>
+                    <li><a href="#">ОДЕЖДА</a></li>
+                    <li><a href="#">АКСЕССУАРЫ / БЕЛЬЁ</a></li>
+                    <li><a href="#">РАСПРОДАЖА</a></li>
+                    <li><a href="#">Б/У</a></li>
+                    <li><a href="#">СКИДКА</a></li>
+                    <li><a href="#">КАК СДЕЛАТЬ ЗАКАЗ</a></li>
+                    <li><a href="#">ПОДБОР РАЗМЕРОВ</a></li>
+                    <li><a href="#">ТКАНИ И УХОД</a></li>
+                    <li><a href="#">ОТЗЫВЫ</a></li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="signIn-regis">РЕГИСТРАЦИЯ / ВОЙТИ</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row d-none d-lg-block">
+                    <div class="col-12 d-flex align-items-start">
+                        <div class="sidebar">
+                            <ul class="sidebar-list">
+                                <li><a href="#">ОДЕЖДА</a></li>
+                                <li><a href="#">АКСЕССУАРЫ / БЕЛЬЁ</a></li>
+                                <li><a href="#">РАСПРОДАЖА</a></li>
+                                <li><a href="#">Б/У</a></li>
+                                <li><a href="#">СКИДКА</a></li>
+                                <li><a href="#">КАК СДЕЛАТЬ ЗАКАЗ</a></li>
+                                <li><a href="#">ПОДБОР РАЗМЕРОВ</a></li>
+                                <li><a href="#">ТКАНИ И УХОД</a></li>
+                                <li><a href="#">ОТЗЫВЫ</a></li>
+                            </ul>
+                        </div>
+                        <h1 class="wrapper-title">ОДЕЖДА ДЛЯ <br>
+                            ФИГУРНОГО КАТАНИЯ</h1>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="catalog-link d-flex align-items-center justify-content-center text-center flex-column">
+                <span>ПЕРЕЙТИ <br> В КАТАЛОГ</span>
+                <img src="assets/img/svg/arrow-down.svg" alt="">
+            </a>
+        </div>
+
+        <div class="block14">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="title-text">корзина</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <table class="block14-table">
+                            <thead>
+                                <tr>
+                                    <th>Товар</th>
+                                    <th>Наименование</th>
+                                    <th>Размер</th>
+                                    <th>Цвет</th>
+                                    <th>Артикул</th>
+                                    <th>Количество</th>
+                                    <th>Сумма</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Товар:">
+                                        <div class="photo">
+                                            <img src="assets/img/png/photo.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td data-label="Наименование:">
+                                        <span>Повязка термо с цветной окантовкой, Линия-2, цвет на выбор</span>
+                                    </td>
+                                    <td data-label="Размер:">
+                                        <span>M</span>
+                                    </td>
+                                    <td data-label="Цвет:">
+                                        <div class="color" style="background: #00C5FF;"></div>
+                                    </td>
+                                    <td data-label="Артикул:">
+                                        <span>Pov-vst</span>
+                                    </td>
+                                    <td data-label="Количество:">
+                                        <div class="quantity-count d-flex align-items-center justify-content-center">
+                                            <div class="quantity-remove disabledBtn">
+                                                <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91667 12.899 0.25 11.9367 0.25 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101035 3.25 0.870835L10 4.76795Z" fill="#002F86"></path>
+                                                </svg>
+                                            </div>
+                                            <input type="text" class="quantity-value" value="1" disabled>
+                                            <div class="quantity-add">
+                                                <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91667 12.899 0.25 11.9367 0.25 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101035 3.25 0.870835L10 4.76795Z" fill="#002F86"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Сумма:">
+                                        <spa class="price">600₽ </spa>
+                                        <button class="refresh">
+                                            <img src="assets/img/svg/refresh.svg" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Товар:">
+                                        <div class="photo">
+                                            <img src="assets/img/png/photo.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td data-label="Наименование:">
+                                        <span>Повязка термо с цветной окантовкой, Линия-2, цвет на выбор</span>
+                                    </td>
+                                    <td data-label="Размер:">
+                                        <span>M</span>
+                                    </td>
+                                    <td data-label="Цвет:">
+                                        <div class="color" style="background: #00C5FF;"></div>
+                                    </td>
+                                    <td data-label="Артикул:">
+                                        <span>Pov-vst</span>
+                                    </td>
+                                    <td data-label="Количество:">
+                                        <div class="quantity-count d-flex align-items-center justify-content-center">
+                                            <div class="quantity-remove disabledBtn">
+                                                <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91667 12.899 0.25 11.9367 0.25 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101035 3.25 0.870835L10 4.76795Z" fill="#002F86"></path>
+                                                </svg>
+                                            </div>
+                                            <input type="text" class="quantity-value" value="1" disabled>
+                                            <div class="quantity-add">
+                                                <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91667 12.899 0.25 11.9367 0.25 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101035 3.25 0.870835L10 4.76795Z" fill="#002F86"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Сумма:">
+                                        <spa class="price">600₽ </spa>
+                                        <button class="refresh">
+                                            <img src="assets/img/svg/refresh.svg" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Товар:">
+                                        <div class="photo">
+                                            <img src="assets/img/png/photo.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td data-label="Наименование:">
+                                        <span>Повязка термо с цветной окантовкой, Линия-2, цвет на выбор</span>
+                                    </td>
+                                    <td data-label="Размер:">
+                                        <span>M</span>
+                                    </td>
+                                    <td data-label="Цвет:">
+                                        <div class="color" style="background: #00C5FF;"></div>
+                                    </td>
+                                    <td data-label="Артикул:">
+                                        <span>Pov-vst</span>
+                                    </td>
+                                    <td data-label="Количество:">
+                                        <div class="quantity-count d-flex align-items-center justify-content-center">
+                                            <div class="quantity-remove disabledBtn">
+                                                <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91667 12.899 0.25 11.9367 0.25 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101035 3.25 0.870835L10 4.76795Z" fill="#002F86"></path>
+                                                </svg>
+                                            </div>
+                                            <input type="text" class="quantity-value" value="1" disabled>
+                                            <div class="quantity-add">
+                                                <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 4.76795C11.3333 5.53775 11.3333 7.46225 10 8.23205L3.25 12.1292C1.91667 12.899 0.25 11.9367 0.25 10.3971L0.25 2.60288C0.25 1.06328 1.91667 0.101035 3.25 0.870835L10 4.76795Z" fill="#002F86"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Сумма:">
+                                        <spa class="price">600₽ </spa>
+                                        <button class="refresh">
+                                            <img src="assets/img/svg/refresh.svg" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="d-flex justify-content-sm-end">
+                            <div class="count-box d-flex align-items-center flex-column flex-sm-row">
+                                <div class="total-price">
+                                    <span>Итого:</span>
+                                    <span class="total">1800₽</span>
+                                </div>
+                                <button class="checkout-btn">оформить заказ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between flex-sm-wrap flex-wrap-reverse">
+                    <div class="footer-item d-flex flex-column">
+                        <a href="tel:79250533969" class="footer-link">
+                            <img src="assets/img/svg/call.svg" alt="">
+                            <span>+7(925)053-39-69</span>
+                        </a>
+                        <a href="mailto:info@iceprincess.ru" class="footer-link">
+                            <img src="assets/img/svg/email.svg" alt="">
+                            <span>info@iceprincess.ru</span>
+                        </a>
+                        <div class="footer-info"><strong>Пн-пТ:</strong> 10:00-18:00 <br> <strong>СБ:</strong> 12:00-15:00 <br> <strong>ВС:</strong> выходной</div>
+                    </div>
+                    <div class="footer-item my-4 m-sm-0">
+                        <ul class="nav d-flex flex-column">
+                            <li><a href="#">Политика конфиденциальности и оферта</a></li>
+                            <li><a href="#">Пользовательское соглашение</a></li>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Сравнение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item d-flex justify-content-lg-center justify-content-sm-start justify-content-center">
+                        <div class="d-flex align-items-center flex-column">
+                            <p class="item-title">наши социальные сети:</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="#" class="social">
+                                    <img src="assets/img/svg/whatsapp.svg" alt="">
+                                </a>
+                                <a href="#" class="social">
+                                    <img src="assets/img/svg/vk.svg" alt="">
+                                </a>
+                                <a href="#" class="social">
+                                    <img src="assets/img/svg/youtube.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/plugins/swiper.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/count.js"></script>
+</body>
+</html>
