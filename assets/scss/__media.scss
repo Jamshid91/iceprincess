@@ -1,3 +1,12 @@
+@media(min-width: 1600px) {
+main {
+  .wrapper {
+    height: 1200px;
+  }
+}
+}
+
+
 @media(max-width: 1300px) {
     main {
         .block23 {
@@ -400,6 +409,9 @@
       }
     }
 
+    .block17 {
+      margin-top: 30px;
+    }
     }
 
     footer {
@@ -411,7 +423,7 @@
 @media(max-width: 776px){
     main {
         .block1 {
-            padding: 12px 0 45px;
+            padding: 12px 0 80px;
             .block1-box {
                 border-radius: 20px;
                 .block1-img {
@@ -602,6 +614,17 @@
               margin-bottom: 25px;
             }
           }
+    }
+
+    .popUp {
+      &-content {
+        width: 98%;
+        padding: 40px 20px 20px;
+        .title-text {
+          font-size: 24px;
+          line-height: 24px;
+        }
+      }
     }
 
 }

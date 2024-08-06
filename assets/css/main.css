@@ -129,7 +129,7 @@ input, textarea, select, button {
   border-color: #002F86;
 }
 .text-box .form__text::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
   background: transparent;
 }
 .text-box .form__text::-webkit-scrollbar-thumb {
@@ -150,6 +150,7 @@ input, textarea, select, button {
   border-radius: 6px;
   border: 1px solid #D9D9D9;
   margin-right: 25px;
+  background: #fff;
   cursor: pointer;
 }
 .check-box label {
@@ -528,7 +529,7 @@ header .showMenu {
 }
 
 main {
-  max-width: 1440px;
+  max-width: 2400px;
   margin: 0 auto;
 }
 main .wrapper {
@@ -574,7 +575,6 @@ main .block1 .block1-box .block1-img img {
 }
 main .block1 .block1-box .block1-info {
   width: 55%;
-  width: 100%;
   padding: 50px 60px 70px;
   color: #fff;
 }
@@ -583,6 +583,8 @@ main .block1 .block1-box .title-text {
 }
 main .block1 .block1-box .info-text {
   margin-top: 15px;
+  color: #fff;
+  text-indent: 40px;
 }
 main .block1 .block1-box .read-more {
   font-size: 14px;
@@ -835,9 +837,24 @@ main .block6 .info-text {
   font-size: 14px;
   line-height: 19px;
   color: #595959;
+  position: relative;
+  z-index: 5;
 }
 main .block6 .info-text:first-child {
   margin-top: 60px;
+}
+main .block6 .ice-img {
+  position: absolute;
+}
+main .block6 .ice-img:first-child {
+  width: 298px;
+  top: -10%;
+  right: -5%;
+}
+main .block6 .ice-img:last-child {
+  width: 78px;
+  top: -20%;
+  left: 3%;
 }
 main .block7 .block7-head {
   min-width: 248px;
@@ -2285,6 +2302,9 @@ main .order .order-form .title-text {
 main .order .order-form .input-box {
   margin-bottom: 20px;
 }
+main .order .order-form .text-box {
+  height: 92px;
+}
 main .order .order-form .form-box {
   margin-top: 30px;
 }
@@ -2524,6 +2544,8 @@ main .order-sucess .sucess-box .back-to-home:hover {
 }
 
 footer {
+  max-width: 2400px;
+  margin: 0 auto;
   padding: 60px 0 50px;
   background: #002F86;
   color: #fff;
@@ -2580,14 +2602,12 @@ footer .footer-item .social:hover {
   left: 0;
   background: rgba(0, 0, 0, 0.6);
   z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow-y: scroll;
 }
 .popUp-close {
   position: absolute;
-  top: 28px;
-  right: 28px;
+  top: 15px;
+  right: 15px;
   background: transparent;
   transition: 0.3s all;
 }
@@ -2595,34 +2615,47 @@ footer .footer-item .social:hover {
   transform: rotate(180deg);
 }
 .popUp-content {
-  width: 456px;
+  width: 698px;
   border-radius: 20px;
-  background: #fff;
-  padding: 31px 28px 27px;
+  padding: 40px 52px;
   position: relative;
   animation: popUp-anim 0.3s linear;
+  border: 1px solid #D9D9D9;
+  overflow: hidden;
+  background: #F8F8F8;
+  margin: 50px auto;
 }
-.popUp-content .form-title span {
-  font-size: 12px;
-  line-height: 14.5px;
-  color: rgba(0, 0, 0, 0.5333333333);
-}
-.popUp-content .form-title p {
-  font-size: 22px;
-  line-height: 26.5px;
-  color: #000;
-}
-.popUp-content .form-checks {
-  margin: 20px 0 18px;
-}
-.popUp-content .form-checks__title {
+.popUp-content .info-text {
   font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
-  margin-bottom: 10px;
+  line-height: 25px;
+  text-indent: 40px;
+  margin: 36px 0;
+}
+.popUp-content .input-box {
+  margin-bottom: 20px;
+}
+.popUp-content .input-box:last-child {
+  margin-bottom: 40px;
+}
+.popUp-content .check-box input[type=checkbox] {
+  min-width: 23px;
+}
+.popUp-content .check-box label span {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.popUp-content .text-box {
+  height: 92px;
+  margin: 40px 0;
+}
+.popUp-content .form-btn {
+  width: 142px;
+  height: 48px;
+  background: #002F86;
+  color: #fff;
 }
 
-.popUpHide {
+.hidePopUp {
   animation: popUp-anim-hide 0.5s linear !important;
 }
 
@@ -2640,6 +2673,11 @@ footer .footer-item .social:hover {
   }
   to {
     transform: scale(0);
+  }
+}
+@media (min-width: 1600px) {
+  main .wrapper {
+    height: 1200px;
   }
 }
 @media (max-width: 1300px) {
@@ -2944,13 +2982,16 @@ footer .footer-item .social:hover {
     left: 50%;
     transform: translateX(-50%);
   }
+  main .block17 {
+    margin-top: 30px;
+  }
   footer .footer-item {
     width: 50%;
   }
 }
 @media (max-width: 776px) {
   main .block1 {
-    padding: 12px 0 45px;
+    padding: 12px 0 80px;
   }
   main .block1 .block1-box {
     border-radius: 20px;
@@ -3117,6 +3158,14 @@ footer .footer-item .social:hover {
   }
   main .block25 .title-text {
     margin-bottom: 25px;
+  }
+  .popUp-content {
+    width: 98%;
+    padding: 40px 20px 20px;
+  }
+  .popUp-content .title-text {
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 @media (max-width: 576px) {
